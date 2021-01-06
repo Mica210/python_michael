@@ -10,7 +10,7 @@ then check if your name is stored inside this full string:
 
 name="Michael"
 age=34
-mail="mica210@walla.com"
+mail="mica@walla.com"
 
 print("My name is: " + name + "\nMy age is: " + str(age) + "\nMy mail is: " + mail)
 print("\nMy reverse name is: " + name[::-1] + "\nMy multiple age is: " + str(age*3))
