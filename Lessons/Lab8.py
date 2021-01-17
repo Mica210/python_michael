@@ -8,11 +8,11 @@ from time import sleep
 from random import randint
 
 while(True):
-    choise=input("\nMenu\n----------\n" + "1.print 100 numbers\n" + "2.check if list is fibo\n" + "3.randint numbers until we get 12 or we count 10 times\n")
-    if(choise=="1"):
+    choice=input("\nMenu\n----------\n" + "1.print 100 numbers\n" + "2.check if list is fibo\n" + "3.randint numbers until we get 12 or we count 10 times\n")
+    if(choice== "1"):
         for i in range(1,101):
             print(i)
-    elif(choise=="2"):
+    elif(choice == "2"):
         fibo=[]
         for i in range(7):
             fibo.append(int(input("Enter a number:")))
@@ -29,7 +29,7 @@ while(True):
             print("It is fibo series")
         else:
             print("It isn't fibo series")
-    elif(choise=="3"):
+    elif(choice == "3"):
         counter = 1
         num = randint(1, 12)
         while (num != 12 and counter < 11):

@@ -7,12 +7,12 @@ Menu:
 
 def menu():
     while(True):
-        choise=(input("Menu\n-------\n1.Dogs Details\n2.Friends list\n3.N Azzeret\n"))
-        if(choise=="1"):
+        choice=(input("Menu\n-------\n1.Dogs Details\n2.Friends list\n3.N Azzeret\n"))
+        if(choice=="1"):
             Dogs()
-        elif(choise=="2"):
+        elif(choice=="2"):
             Friends()
-        elif(choise=="3"):
+        elif(choice=="3"):
             Azzeret()
         else:
             print("Enter 1-3 only!!")
@@ -21,7 +21,7 @@ def menu():
         if(Exit=="yes"):
             break
         else:
-            print("Walcome back\n ")
+            print("Welcome back\n ")
     print("\nBye Bye\n")
 
 def Dogs():
