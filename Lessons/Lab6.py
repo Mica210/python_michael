@@ -11,27 +11,27 @@ from time import sleep
 print("Starting the menu... \n")
 sleep(1)
 choice=input("Menu\n______\n" + "1.Enter a number to ** it by 3: \n" + "2.Enter 4 IP Addresses and print them: \n" + "3.Enter 4 Entries to dns_Dictionary and print them: \n" + "4.check if a string is polindrom \n")
-if(choice== "1"):
+if choice == "1":
     print("Your new number is: " + str((int(input("Enter a number: ")))**3))
-elif(choice == "2"):
-    IP_lists=[]
+elif choice == "2":
+    IP_lists = []
     IP_lists.append(input("Enter your IP:"))
     IP_lists.append(input("Enter your IP:"))
     IP_lists.append(input("Enter your IP:"))
     IP_lists.append(input("Enter your IP:"))
     sleep(1)
     print("\nYour IP lists is: " + str(IP_lists))
-elif (choice == "3"):
-    DNS_dict={}
+elif choice == "3":
+    DNS_dict = {}
     DNS_dict.update({input("Enter your URL:"): input("Enter IP: ")})
     DNS_dict.update({input("Enter your URL:"): input("Enter IP: ")})
     DNS_dict.update({input("Enter your URL:"): input("Enter IP: ")})
     DNS_dict.update({input("Enter your URL:"): input("Enter IP: ")})
     sleep(1)
     print("\nYour DNS_Dictionary is:\n" + str(DNS_dict))
-elif(choice == "4"):
-    word=input("Enter a word: ")
-    if (word == word[::-1]):
+elif choice == "4":
+    word = input("Enter a word: ")
+    if word == word[::-1]:
         print("This is polindrom!!")
     else:
         print("This isn't polindrom!!")
